@@ -8,8 +8,6 @@ const config = {
     },
     databaseUrl: process.env.DATABASE_URL!,
     upstash: {
-      redisUrl: process.env.UPSTASH_REDIS_URL,
-      redisToken: process.env.UPSTASH_REDIS_TOKEN,
       qStashUrl: process.env.QSTASH_URL!,
       qStashToken: process.env.QSTASH_TOKEN!,
     },
@@ -21,6 +19,5 @@ export default config;
 const {
   env: {
     imagekit: { publicKey, privateKey, urlEndpoint },
-    upstash: { redisUrl, redisToken },
   },
 } = config;
