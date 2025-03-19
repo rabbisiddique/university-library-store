@@ -7,10 +7,6 @@ const config = {
       privateKey: process.env.IMAGEKIT_PRIVATE_KEY!,
     },
     databaseUrl: process.env.DATABASE_URL!,
-    upstash: {
-      qStashUrl: process.env.QSTASH_URL!,
-      qStashToken: process.env.QSTASH_TOKEN!,
-    },
   },
 };
 

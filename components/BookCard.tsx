@@ -8,8 +8,8 @@ const BookCard = ({
   id,
   title,
   genre,
-  color,
-  cover,
+  coverColor,
+  coverUrl,
   isLoanedBook = false,
 }: Book) => {
   return (
@@ -19,8 +19,8 @@ const BookCard = ({
         className={cn("flex flex-col", isLoanedBook && "w-full items-center")}
       >
         <BookCover
-          coverColor={color}
-          coverImage={cover || "https://placehold.co/400x600.png"}
+          coverColor={coverColor}
+          coverImage={coverUrl || "https://placehold.co/400x600.png"}
         />
 
         <div
